@@ -138,6 +138,7 @@ public class OperacionB {
                 System.out.println("\n LIBRO NO ENCONTRADO !! \n");
             }
     }
+    // METODO DE ELIMINACION
     public void eliminarProy(String pr){
             int sw=0;
             Iterator<MaterialBibliografico> ite=listama.iterator();
@@ -171,7 +172,7 @@ public class OperacionB {
         } catch (Exception e) {
         }
     }
-    //guardando la listacliente dentro del archivo creado con anterioridad
+    //guardando la listama dentro del archivo creado con anterioridad
     public void guardarObjetos(){
         String ruta="E:\\PROGRAMACION\\TercerAño\\archivoMaterial.txt";
         try {
@@ -186,7 +187,7 @@ public class OperacionB {
             Logger.getLogger(OperacionB.class.getName()).log(Level.SEVERE, null, ex);            
         }
     }
-    //cargamos los datos del archivo a un list<Cliente>
+    //cargamos los datos del archivo a un list<MaterialBibliografico>
     public void leerMaterial(){
         String ruta="E:\\PROGRAMACION\\TercerAño\\archivoMaterial.txt";
         try {
