@@ -36,6 +36,7 @@ public class Menu_Principal {
                     op.crearArchivo();
                     break;
                 case 2:
+                    op.leerMaterial();
                     System.out.print("\n Introduzca tipo de Material '1. Libro' o '2. Proyecto de Grado' : ");
                     int opcion=sd.nextInt();
                     System.out.println("-----------------------------------------------------------");
